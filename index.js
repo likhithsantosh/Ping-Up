@@ -9,6 +9,11 @@ import connectDB from './config/db.js';
 // Inngest
 import { inngest, functions } from './inngest/Server.js';
 
+app.get('/', (req, res) => {
+  res.send('API is running');
+});
+
+
 // Routes
 import userRouter from './routes/userroutes.js';
 import postRouter from './routes/postroutes.js';
