@@ -2,8 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import 'dotenv/config';
 import { clerkMiddleware } from '@clerk/express';
-import pkg from 'inngest';
-const { serve } = pkg;
+import { serve } from 'inngest/express';
 
 import connectDB from './config/db.js';
 
